@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Registration Form</title>
+<link rel="stylesheet" href="formstyle.css">
+<script>
+  function redirectToHomePage() {
+      window.location.href = "/";  // Change this to your home page URL
+  }
+</script>
+</head>
+<body>
+
+<div class="container">
+  <form method="POST" action="http://127.0.0.1:8000/api/intra-event/unauthorized-submit/">
+    <h2>Registration Form</h2>
+
+    <input type="hidden" id="event_name" name="event_name" value="Your_Event_Name_Here">
+    
+    <label for="segment_name">Segment:</label>
+    <select id="segment_name" name="segment_name" required>
+      <option value="">Select Segment</option>
+      <option value="Segment 1">MAZE SOLVING</option>
+      <option value="Segment 2">BOT FIGHT</option>
+      <option value="Segment 3">SOCCER BOT</option>
+      <option value="Segment 4">SEARCH AND SECURE</option>
+      <option value="Segment 5">SUMO ROBOTICS</option>
+    </select>
+    
+    
+    <div class="team-member">
+        <h3>Team Member 1</h3>
+      <label for="team_member_name_1">Name:</label>
+      <input type="text" id="team_member_name_1" name="team_member_name_1" maxlength="100" required>
+      <label for="team_member_student_id_1">Student ID:</label>
+      <input type="text" id="team_member_student_id_1" name="team_member_student_id_1" maxlength="20" required>
+      <label for="is_robu_member_1">ROBU Member:</label>
+      <input type="checkbox" id="is_robu_member_1" name="is_robu_member_1">
+      <label for="robu_dept_1">ROBU Department:</label>
+      <input type="text" id="robu_dept_1" name="robu_dept_1" maxlength="100">
+      <label for="gsuit_1">GSuit:</label>
+      <input type="text" id="gsuit_1" name="gsuit_1" maxlength="100">
+    </div>
+
+    <div class="team-member">
+      <h3>Team Member 2</h3>
+      <label for="team_member_name_2">Name:</label>
+      <input type="text" id="team_member_name_2" name="team_member_name_2" maxlength="100" required>
+      <label for="team_member_student_id_2">Student ID:</label>
+      <input type="text" id="team_member_student_id_2" name="team_member_student_id_2" maxlength="20" required>
+      <label for="is_robu_member_2">ROBU Member:</label>
+      <input type="checkbox" id="is_robu_member_2" name="is_robu_member_2">
+      <label for="robu_dept_2">ROBU Department:</label>
+      <input type="text" id="robu_dept_2" name="robu_dept_2" maxlength="100">
+      <label for="gsuit_2">GSuit:</label>
+      <input type="text" id="gsuit_2" name="gsuit_2" maxlength="100">
+  </div>
+  
+  <div class="team-member">
+      <h3>Team Member 3</h3>
+      <label for="team_member_name_3">Name:</label>
+      <input type="text" id="team_member_name_3" name="team_member_name_3" maxlength="100" required>
+      <label for="team_member_student_id_3">Student ID:</label>
+      <input type="text" id="team_member_student_id_3" name="team_member_student_id_3" maxlength="20" required>
+      <label for="is_robu_member_3">ROBU Member:</label>
+      <input type="checkbox" id="is_robu_member_3" name="is_robu_member_3">
+      <label for="robu_dept_3">ROBU Department:</label>
+      <input type="text" id="robu_dept_3" name="robu_dept_3" maxlength="100">
+      <label for="gsuit_3">GSuit:</label>
+      <input type="text" id="gsuit_3" name="gsuit_3" maxlength="100">
+  </div>
+  
+  <div class="team-member">
+      <h3>Team Member 4</h3>
+      <label for="team_member_name_4">Name:</label>
+      <input type="text" id="team_member_name_4" name="team_member_name_4" maxlength="100" required>
+      <label for="team_member_student_id_4">Student ID:</label>
+      <input type="text" id="team_member_student_id_4" name="team_member_student_id_4" maxlength="20" required>
+      <label for="is_robu_member_4">ROBU Member:</label>
+      <input type="checkbox" id="is_robu_member_4" name="is_robu_member_4">
+      <label for="robu_dept_4">ROBU Department:</label>
+      <input type="text" id="robu_dept_4" name="robu_dept_4" maxlength="100">
+      <label for="gsuit_4">GSuit:</label>
+      <input type="text" id="gsuit_4" name="gsuit_4" maxlength="100">
+  </div>
+  
+
+    <label for="transaction_id">Transaction ID:</label>
+    <input type="text" id="transaction_id" name="transaction_id" maxlength="100" required>
+    
+    
+    <button type="submit" onclick="redirectToHomePage()">Submit</button>
+  </form>
+</div>
+
+</body>
+</html>

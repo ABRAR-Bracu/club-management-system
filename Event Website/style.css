@@ -1,0 +1,136 @@
+html {
+    scroll-behavior: smooth;
+  }
+  
+  body {
+    font-family: "Lato", sans-serif;
+    padding: 0;
+    margin: 0;
+  }
+  
+  nav {
+    background-color: #111;
+    color: white;
+    padding: 20px 50px;
+  }
+  
+  .navTop {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+.img1{
+    height: 50px;
+    width: 70px;
+}
+.img2{
+    margin-top: 10px;
+    height: 50px;
+    width: 70px;
+    background-color: grey;
+}
+.dropdown {
+    position: relative;
+    display: inline-block;
+    padding-right: 70px;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    z-index: 1;
+}
+
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown-content a:hover {
+    background-color: #f1f1f1;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.dropbtn {
+    background-color: transparent;
+    color: grey;
+    border: none;
+    cursor: pointer;
+    padding: 0;
+    font-size: 14px;
+}
+  
+.navBottom {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .menuItem {
+    margin-right: 50px;
+    cursor: pointer;
+    color: lightgray;
+    font-weight: 400;
+  }
+  
+.slider{
+    background: url("https://img.freepik.com/free-photo/white-painted-wall-texture-background_53876-138197.jpg?t=st=1711556050~exp=1711559650~hmac=e5f3d1986f4a4030da672cad8781b2b0a247d15c30e7d38c89e0d53fa9391df7&w=826");
+    
+}
+.sliderWrapper{
+    display: flex;
+    width: 500vw;
+    transition: all 1.5s ease-in-out;
+}
+.sliderItem{
+    width: 100vw;
+    display: flex;
+    align-items: center;
+    justify-content: space-between ;
+    position: relative;
+    z-index: 1;
+}
+.Slidertitle{
+    position: absolute;
+    top: 10%;
+    right: 10%;
+    color: black;
+    z-index: 1;
+    padding-top: 2%;
+}
+.Button {
+    position: absolute;
+    top: 50%; 
+    right: 5%; 
+    transform: translateY(-50%); 
+    font-size: 20px;
+    padding: 10px 20px; 
+    background-color: white;
+    color: black;
+    border: 1px solid gray;
+    border-radius: 5px; 
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s; 
+    z-index: 1;
+}
+
+.Button:hover {
+    background-color: gray;
+    color: white; 
+}
+
+.sliderImg{
+    margin-top: 10%;
+    margin-left: 10%;
+    border-radius: 20%;
+    width: 500px; 
+    height: 500px; 
+    
+}
